@@ -1,3 +1,5 @@
+console.log('main.js loaded');
+
 import { fetchImages } from './js/pixabay-api.js';
 import { renderImages, showNotification } from './js/render-functions.js';
 import './css/loader.css';
