@@ -1,8 +1,8 @@
 console.log('main.js loaded');
 
-import { fetchImages } from '/js/pixabay-api.js';
-import { renderImages, showNotification } from '/js/render-functions.js';
-import '/css/loader.css';
+import { fetchImages } from './js/pixabay-api.js';
+import { renderImages, showNotification } from './js/render-functions.js';
+import './css/loader.css';
 
 const form = document.querySelector('#search-form');
 const input = form.querySelector('input[name="searchQuery"]');
