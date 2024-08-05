@@ -6,11 +6,11 @@ import 'izitoast/dist/css/iziToast.min.css';
 let lightbox;
 
 export function renderImages(images) {
-  const gallery = document.querrySelector('.gallery');
+  const gallery = document.querySelector('.gallery');
   gallery.innerHTML = images
     .map(
       image => `
-    <a href="${image.largeImageURL}" class="gallery__item">
+        <a href="${image.largeImageURL}" class="gallery__item">
             <img src="${image.webformatURL}" alt="${image.tags}" class="gallery__image" />
             <div class="info">
                 <p class="info-item"><b>Likes:</b> ${image.likes}</p>
@@ -19,7 +19,7 @@ export function renderImages(images) {
                 <p class="info-item"><b>Downloads:</b> ${image.downloads}</p>
             </div>
         </a>
-        `
+    `
     )
     .join('');
 
