@@ -37,3 +37,8 @@ export function showNotification(message, type = 'info') {
     color: type,
   });
 }
+
+export function clearGallery() {
+  const gallery = document.querySelector('.gallery');
+  gallery.innerHTML = '';
+}
